@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB187BD67F571C0FBA216EDB /* libPods-BSBDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23235ACDC7A5E284ECD6C284 /* libPods-BSBDJ.a */; };
 		E109EE3E1DEE9F0100BD1CCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E109EE3D1DEE9F0100BD1CCE /* main.m */; };
 		E109EE411DEE9F0100BD1CCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E109EE401DEE9F0100BD1CCE /* AppDelegate.m */; };
 		E109EE491DEE9F0100BD1CCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E109EE481DEE9F0100BD1CCE /* Assets.xcassets */; };
@@ -44,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23235ACDC7A5E284ECD6C284 /* libPods-BSBDJ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BSBDJ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A36381937E16C7AB69B5A67 /* Pods-BSBDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSBDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ.debug.xcconfig"; sourceTree = "<group>"; };
+		DBBFF1D6A05EE08A4B53A46C /* Pods-BSBDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSBDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ.release.xcconfig"; sourceTree = "<group>"; };
 		E109EE391DEE9F0100BD1CCE /* BSBDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSBDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E109EE3D1DEE9F0100BD1CCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E109EE3F1DEE9F0100BD1CCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB187BD67F571C0FBA216EDB /* libPods-BSBDJ.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +112,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AB8124578218B3416165E83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A36381937E16C7AB69B5A67 /* Pods-BSBDJ.debug.xcconfig */,
+				DBBFF1D6A05EE08A4B53A46C /* Pods-BSBDJ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		47CCA7DB70B44BA1F9731D38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23235ACDC7A5E284ECD6C284 /* libPods-BSBDJ.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E109EE301DEE9F0100BD1CCE = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +136,8 @@
 				E109EE551DEE9F0100BD1CCE /* BSBDJTests */,
 				E109EE601DEE9F0100BD1CCE /* BSBDJUITests */,
 				E109EE3A1DEE9F0100BD1CCE /* Products */,
+				0AB8124578218B3416165E83 /* Pods */,
+				47CCA7DB70B44BA1F9731D38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -344,9 +368,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E109EE661DEE9F0100BD1CCE /* Build configuration list for PBXNativeTarget "BSBDJ" */;
 			buildPhases = (
+				344585323F527590D3ED70FC /* [CP] Check Pods Manifest.lock */,
 				E109EE351DEE9F0100BD1CCE /* Sources */,
 				E109EE361DEE9F0100BD1CCE /* Frameworks */,
 				E109EE371DEE9F0100BD1CCE /* Resources */,
+				C23E95BE256D07F61C5CC91B /* [CP] Embed Pods Frameworks */,
+				0E52FD6B818F7272226B0640 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -468,6 +495,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E52FD6B818F7272226B0640 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		344585323F527590D3ED70FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C23E95BE256D07F61C5CC91B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E109EE351DEE9F0100BD1CCE /* Sources */ = {
@@ -636,6 +711,7 @@
 		};
 		E109EE671DEE9F0100BD1CCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A36381937E16C7AB69B5A67 /* Pods-BSBDJ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -650,6 +726,7 @@
 		};
 		E109EE681DEE9F0100BD1CCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBBFF1D6A05EE08A4B53A46C /* Pods-BSBDJ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
