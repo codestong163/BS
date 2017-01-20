@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  BSBDJ
+
+  Created by Hongjian.Lan on 2016/12/16.
+  Copyright © 2016年 Hongjian.Lan. All rights reserved.
+*/
+//mybutton
+
+"button1" = "Essence";
+"button2" = "New post";
+"button3" = "Focus on";
+"button4" = "My";
+
+
+//Navbarbutton
+"返回" = "return";
