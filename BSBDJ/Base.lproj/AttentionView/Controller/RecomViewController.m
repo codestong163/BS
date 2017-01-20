@@ -7,7 +7,7 @@
 //
 
 #import "RecomViewController.h"
-
+#import "AFNetworking.h"
 @interface RecomViewController ()
 
 @end
