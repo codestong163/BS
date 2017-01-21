@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.navigationItem.title = NSLocalizedString(@"button3", nil );
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"friendsRecommentIcon"] style:UIBarButtonItemStylePlain target:self action:@selector(leftbarbutton:)];

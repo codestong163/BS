@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD64D0031E3377B700B739AB /* RecomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD64D0021E3377B700B739AB /* RecomModel.m */; };
+		CD64D0071E3385BF00B739AB /* RecomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD64D0051E3385BF00B739AB /* RecomCell.m */; };
+		CD64D0081E3385BF00B739AB /* RecomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD64D0061E3385BF00B739AB /* RecomCell.xib */; };
 		DB187BD67F571C0FBA216EDB /* libPods-BSBDJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23235ACDC7A5E284ECD6C284 /* libPods-BSBDJ.a */; };
 		E109EE3E1DEE9F0100BD1CCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E109EE3D1DEE9F0100BD1CCE /* main.m */; };
 		E109EE411DEE9F0100BD1CCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E109EE401DEE9F0100BD1CCE /* AppDelegate.m */; };
@@ -47,6 +50,12 @@
 /* Begin PBXFileReference section */
 		23235ACDC7A5E284ECD6C284 /* libPods-BSBDJ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BSBDJ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A36381937E16C7AB69B5A67 /* Pods-BSBDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSBDJ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ.debug.xcconfig"; sourceTree = "<group>"; };
+		CD64D0011E3377B700B739AB /* RecomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecomModel.h; sourceTree = "<group>"; };
+		CD64D0021E3377B700B739AB /* RecomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecomModel.m; sourceTree = "<group>"; };
+		CD64D0041E3385BF00B739AB /* RecomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecomCell.h; sourceTree = "<group>"; };
+		CD64D0051E3385BF00B739AB /* RecomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecomCell.m; sourceTree = "<group>"; };
+		CD64D0061E3385BF00B739AB /* RecomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecomCell.xib; sourceTree = "<group>"; };
+		CDA4953D1E31F30E00F24FB1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		DBBFF1D6A05EE08A4B53A46C /* Pods-BSBDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSBDJ.release.xcconfig"; path = "Pods/Target Support Files/Pods-BSBDJ/Pods-BSBDJ.release.xcconfig"; sourceTree = "<group>"; };
 		E109EE391DEE9F0100BD1CCE /* BSBDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSBDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E109EE3D1DEE9F0100BD1CCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -156,6 +165,7 @@
 			children = (
 				E109EE3F1DEE9F0100BD1CCE /* AppDelegate.h */,
 				E109EE401DEE9F0100BD1CCE /* AppDelegate.m */,
+				CDA4953D1E31F30E00F24FB1 /* PrefixHeader.pch */,
 				E1C074C21DEEC78A0010E620 /* Maintabbar */,
 				E109EE481DEE9F0100BD1CCE /* Assets.xcassets */,
 				E109EE4A1DEE9F0100BD1CCE /* LaunchScreen.storyboard */,
@@ -248,6 +258,8 @@
 		E1C074C51DEEC85F0010E620 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CD64D0011E3377B700B739AB /* RecomModel.h */,
+				CD64D0021E3377B700B739AB /* RecomModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,6 +267,9 @@
 		E1C074C61DEEC85F0010E620 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CD64D0041E3385BF00B739AB /* RecomCell.h */,
+				CD64D0051E3385BF00B739AB /* RecomCell.m */,
+				CD64D0061E3385BF00B739AB /* RecomCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -474,6 +489,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD64D0081E3385BF00B739AB /* RecomCell.xib in Resources */,
 				E109EE4C1DEE9F0100BD1CCE /* LaunchScreen.storyboard in Resources */,
 				E1261C2C1E03964D000D47ED /* Localizable.strings in Resources */,
 				E109EE491DEE9F0100BD1CCE /* Assets.xcassets in Resources */,
@@ -555,10 +571,12 @@
 				E1C074DE1DEEC9A40010E620 /* HomeController.m in Sources */,
 				E109EE411DEE9F0100BD1CCE /* AppDelegate.m in Sources */,
 				E14A8C031E0B6E8B009913C4 /* RecomViewController.m in Sources */,
+				CD64D0071E3385BF00B739AB /* RecomCell.m in Sources */,
 				E109EE3E1DEE9F0100BD1CCE /* main.m in Sources */,
 				E14A8C001E093211009913C4 /* MiddleButton.m in Sources */,
 				E1C074D51DEEC91E0010E620 /* MainViewController.m in Sources */,
 				E1C074E71DEEC9FA0010E620 /* MyController.m in Sources */,
+				CD64D0031E3377B700B739AB /* RecomModel.m in Sources */,
 				E1C074D81DEEC93F0010E620 /* NavViewController.m in Sources */,
 				E1C074E41DEEC9E30010E620 /* AttentionController.m in Sources */,
 			);
@@ -716,6 +734,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = F7NN6HER36;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BSBDJ/PrefixHeader.pch";
 				INFOPLIST_FILE = BSBDJ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -732,6 +752,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = F7NN6HER36;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BSBDJ/PrefixHeader.pch";
 				INFOPLIST_FILE = BSBDJ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
